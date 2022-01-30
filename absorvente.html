@@ -32,7 +32,7 @@
               <label for="loginSenha">Senha</label>
               <input type="password" class="form-control" id="loginSenha" placeholder="********">
             </div>
-            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+            <button type="submit" class="btn bg-btn">ENTRAR NA CONTA</button>
             <small class="form-text text-muted mt-2">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
           </form>
         </div>
@@ -51,17 +51,20 @@
     </button>
     <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manual da Mulher</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        
-          </div>
+
+        <li class="nav-item">
+          <a href="./saude.html" class="nav-link">Conheça Seu Corpo</a>
         </li>
         <li class="nav-item">
-          <a href="link" class="nav-link">Absorvente Solidário</a>
+          <a href="./absorvente.html" class="nav-link">Absorvente Solidário</a>
         </li>
         <li class="nav-item">
-          <a href="#contato" class="nav-link">Cadastre-se</a>
+          <a href="#" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="./cadastro.html" class="btn ml-md-2 bg-btn">
+            CADASTRE-SE
+          </a>
         </li>
       </ul>
     </div>
@@ -75,11 +78,11 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <div class="d-flex justify-content-center">
-            <img src="./img/caixa.jpeg" alt="passaporte">
+          <div class="d-flex justify-content-center mt-3">
+            <img src="./img/caixa.jpeg" alt="passaporte" style="max-width: 500px; border-radius: 8px;">
           </div>
 
-          <p>Corrente do bem, ajude uma mulher!</p>
+          <h5 class="font-weight-bold mt-4">Corrente do bem, ajude uma mulher!</h5>
         </div>
       </div>
 
@@ -90,7 +93,6 @@
   <!-- DEPOIMENTOS -->
   <section class="container">
     <div class="my-5 text-center">
-      <span class="h6 d-block">DEPOIMENTOS</span>
       <h2 class="display-4 text-pink title-mobile">NOS MULHERES SOMOS ÚNICAS...</h2>
       <h3 class="display-4 text-pink title-mobile">ASSIM COMO NOSSO CORPO!</h3>
     </div>
@@ -99,11 +101,11 @@
       <div class="col-md-6" id="perguntasFrequentes">
         <div class="pergunta py-2">
           <a class="lead text-pink" href="#pergunta1" data-toggle="collapse" data-target="#pergunta1" aria-expanded="true" aria-controls="pergunta1">
-            →  A criação da caixa solidária
+            → A criação da caixa solidária
           </a>
           <div id="pergunta1" class="collapse show" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
-            <p class="pt-4">  
-                Absorvente não é considerado como item de higiene básica e nem distribuído gratuitamente, pensando que tendo dinheiro ou não, você que menstrua, precisará usar todos os meses. Não podemos simplesmente esperar pela solução de um problema recorrente mensalmente em nossas vidas.
+            <p class="pt-4">
+              Absorvente não é considerado como item de higiene básica e nem distribuído gratuitamente, pensando que tendo dinheiro ou não, você que menstrua, precisará usar todos os meses. Não podemos simplesmente esperar pela solução de um problema recorrente mensalmente em nossas vidas.
             </p>
           </div>
         </div>
@@ -114,7 +116,7 @@
           </a>
           <div id="pergunta2" class="collapse" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
             <p class="pt-4">Esta caixinha de acrílico não é só uma caixa, ela representa a sonoridade entre nós e a força que isso tem. Você pode deixar aqui o absorvente que você quer doar ou pode retirar o que você precisa.
-                
+
             </p>
           </div>
         </div>
@@ -125,7 +127,7 @@
           </a>
           <div id="pergunta3" class="collapse" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
             <p class="pt-4">
-                Com a geolocalização você encontrará os banheiros limpos e seguros pra você usar a hora que precisar, banheiros mapeados por nós e mais acessados, receberão a caixa solidária para que as doações aconteçam.
+              Com a geolocalização você encontrará os banheiros limpos e seguros pra você usar a hora que precisar, banheiros mapeados por nós e mais acessados, receberão a caixa solidária para que as doações aconteçam.
             </p>
           </div>
         </div>
@@ -136,11 +138,11 @@
           </a>
           <div id="pergunta4" class="collapse" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
             <p class="pt-4">
-               O QRCODE foi feito para você mulher acessar a tagarELA com maior comodidade de seu celular, tire uma foto dele e compartilhe com suas amigas.
+              O QRCODE foi feito para você mulher acessar a tagarELA com maior comodidade de seu celular, tire uma foto dele e compartilhe com suas amigas.
             </p>
             <p class="pt-4">
-               Assim mais mulheres saberão onde encontrar banheiros limpos, seguros e que possuem a caixa solidária da tagarELA.
-             </p>
+              Assim mais mulheres saberão onde encontrar banheiros limpos, seguros e que possuem a caixa solidária da tagarELA.
+            </p>
           </div>
         </div>
         <div class="dropdown-divider"></div>
@@ -150,11 +152,11 @@
           </a>
           <div id="pergunta5" class="collapse" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
             <p class="pt-4">
-     Sim! você pode colocar na caixa solidária tagarELA absorventes externos ou internos, o importante é você sempre contribuir quando puder, assim mais mulheres poderão usufruir.
+              Sim! você pode colocar na caixa solidária tagarELA absorventes externos ou internos, o importante é você sempre contribuir quando puder, assim mais mulheres poderão usufruir.
             </p>
           </div>
         </div>
-        
+
         <div class="dropdown-divider"></div>
       </div>
     </div>
@@ -165,32 +167,33 @@
   <section class="py-5 bg-light text-center">
     <div class="container">
       <div class="mb-3">
-        <h2 class="display-4 text-pink title-mobile">Onde encontrar? Geolocalização de banheiros com a caixa solidária. </h2>
+        <h2 class="display-4 text-pink title-mobile">Onde encontrar? </h2>
+        <h4 class="mt-5 mb-4">Encontre rapidamente um banheiro que possua nossa <a href="https://www.google.com/maps/search/banheiro+p%C3%BAblico+s%C3%A3o+paulo/@-23.5954529,-46.8802995,11z" target="_blank" title="encontrar banheiros">caixa solidária</a></h4>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6">
+          <div class="d-flex justify-content-center flex-column">
+            <a href="https://www.google.com/maps/search/banheiro+p%C3%BAblico+s%C3%A3o+paulo/@-23.5954529,-46.8802995,11z" target="_blank" title="encontrar banheiros"><img src="./img/geolocalizacao.png" alt="mapa com banheiro público em são paulo" style="max-width: 500px; border-radius: 8px;"></a>
+            <p class="font-weight-bold text-left mt-4"> 👉 Faça você também a diferença na vida da mulher. Contribuir com a caixa solidária é aumentar a qualidade de vida de alguém.</p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <p class="mt-5 text-pink font-weight-bold">Se cuide, se ame e viva melhor</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
           <div class="d-flex justify-content-center">
-            <img src="./img/geolocalizacao.png" alt="icon2">
+            <img src="./img/sangue.png" alt="icon3">
           </div>
 
-          <p>Encontre rapidamente um banheiro que possua nossa caixa solidária.</p>
-          <p>Faça você também a diferença na vida da mulher, contribuir com a caixa solidária é aumentar a qualidade de vida de alguém.</p>
+          <p class="font-weight-bold">Para maiores informações acesse o portal de saúde da mulher no site da prefeitura.</p>
+          <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/saude_da_mulher/" target="_blank">
+            IR PARA O SITE DA PREFEITURA</a>
         </div>
       </div>
-  
-        <p class="mt-5 text-pink font-weight-bold">Se cuide, se ame e viva melhor</p>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="d-flex justify-content-center">
-              <img src="./img/sangue.png" alt="icon3">
-            </div>
-
-            <p>Para maiores informações acesse o portal de saúde da mulher no site da prefeitura.</p>
-            <p>CLIQUE:  <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/saude_da_mulher/">
-                &#128420;</a></p>
-          </div>
-        </div>
-      </div>
+    </div>
 
     </div>
   </section>

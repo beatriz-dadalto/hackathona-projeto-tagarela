@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>TAGARELA | CADASTRO</title>
+</head>
+
+<body>
+  <!-- MODAL -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoingTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h4" id="modalLoingTitulo">Entre na sua conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="nome@email.com">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha" placeholder="********">
+            </div>
+            <button type="submit" class="btn bg-btn">ENTRAR NA CONTA</button>
+            <small class="form-text text-muted mt-2">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL -->
+  <!-- NAVBAR -->
+  <nav class="fixed-top py-3 box-shadow navbar navbar-expand-md navbar-light bg-light">
+    <a href="./index.html" class="navbar-brand">
+      <img src="./img/logo.svg" alt="logo tagarela">
+    </a>
+    <!-- RESPONSIVE BUTTON -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a href="./saude.html" class="nav-link">Conheça Seu Corpo</a>
+        </li>
+        <li class="nav-item">
+          <a href="./absorvente.html" class="nav-link">Absorvente Solidário</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="./cadastro.html" class="btn ml-md-2 bg-btn">
+            CADASTRE-SE
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- FORMULARIO CADASTRO -->
+  <section class="container mb-5">
+    <div class="my-5 text-center">
+      <h1 class="display-4 text-pink">Cadastre-se</h1>
+    </div>
+    <div class="row justify-content-center">
+      <form class="col-lg-6">
+        <div class="form-row">
+          <div class="form-group col-12">
+            <label for="inputNome">Nome</label>
+            <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="nome@email.com">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputSenha">Senha</label>
+            <input type="password" class="form-control" id="inputSenha" placeholder="********">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputTel">Celular</label>
+            <input type="tel" class="form-control" id="inputTel" placeholder="(99) 99999-9999">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmergencia">Contato de emergência</label>
+            <input type="tel" class="form-control" id="inputEmergencia" placeholder="(99) 99999-9999">
+          </div>
+          <div class="form-group col-12">
+            <label for="inputEndereco">Endereço</label>
+            <input type="password" class="form-control" id="inputEndereco" placeholder="Número, nome da rua e bairro">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCidade">Cidade</label>
+            <input type="password" class="form-control" id="inputCidade" placeholder="Digite a cidade">
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputEstado">Estado</label>
+            <select class="form-control" id="inputEstado">
+              <option selected disabled>Selecione</option>
+              <option>Rio de Janeiro</option>
+              <option>São Paulo</option>
+              <option>Paraná</option>
+              <option>Ceará</option>
+              <option>Acre</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputCidade">CEP</label>
+            <input type="password" class="form-control" id="inputCidade" placeholder="xxxxx-xxx">
+          </div>
+        </div>
+        <!-- BTN CADASTRO -->
+        <div class="form-check mt-3 mb-2">
+          <input type="checkbox" class="form-check-input" id="termosECondicoes">
+          <label class="form-check-label" for="termosECondicoes">
+            Concordo com os <a href="#">Termos e Condições</a>.
+          </label>
+        </div>
+        <button type="submit" class="btn btn-lg bg-btn">CADASTRAR</button>
+
+      </form>
+
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="bg-pink text-white">
+
+    <div class="text-dark text-center py-3">
+      <p class="mb-0">
+        <!-- Javascript traz o ano atual -->
+        <img src="./img/logo.svg" alt="logo tagarela">
+      <p>
+        &copy; <span id="ano-atual"></span>Direitos reservados.
+      </p>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

@@ -44,3 +44,14 @@ body {
 .bg-pink {
   background-color: #D6A0A0;
 }
+
+.bg-btn {
+  background-color: #FF0751;
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.bg-btn:hover {
+  color: gainsboro;
+}
