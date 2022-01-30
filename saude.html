@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>TAGARELA</title>
+</head>
+
+<body>
+  <!-- MODAL -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoingTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h4" id="modalLoingTitulo">Entre na sua conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="nome@email.com">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha" placeholder="********">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+            <small class="form-text text-muted mt-2">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL -->
+  <!-- NAVBAR -->
+  <nav class="fixed-top py-3 box-shadow navbar navbar-expand-md navbar-light bg-light">
+    <a href="./index.html" class="navbar-brand">
+      <img src="./img/logo.svg" alt="logo tagarela">
+    </a>
+    <!-- RESPONSIVE BUTTON -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Saúde</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="link" class="dropdown-item">Mental</a>
+            <a href="link" class="dropdown-item">Batata</a>
+            <a href="link" class="dropdown-item">Tomate</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="link" class="nav-link">Absorvente Solidário</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contato" class="nav-link">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- INTRO -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <div class="m-3">
+        <h2 class="display-4 text-pink title-mobile">CONHEÇA SEU CORPO, CONHEÇA VOCÊ</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center">
+            <img src="./img/mulherIcon.jpeg" alt="passaporte">
+          </div>
+
+          <p>Conhecer a si mesma é uma forma de se cuidar e protejer!</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">DEPOIMENTOS</span>
+      <h2 class="display-4 text-pink title-mobile">HEY, VOCÊ</h2>
+      <h3 class="display-4 text-pink title-mobile">JÁ PASSOU POR ISSO?</h3>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6" id="perguntasFrequentes">
+        <div class="pergunta py-2">
+          <a class="lead text-pink" href="#pergunta1" data-toggle="collapse" data-target="#pergunta1" aria-expanded="true" aria-controls="pergunta1">
+            → "Depoimento 1...”
+          </a>
+          <div id="pergunta1" class="collapse show" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
+            <p class="pt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
+            </p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a class="lead text-pink" href="#pergunta2" data-toggle="collapse" data-target="#pergunta2" aria-expanded="true" aria-controls="pergunta2">
+            → "Depoimento 2...”
+          </a>
+          <div id="pergunta2" class="collapse" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
+            <p class="pt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
+            </p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a class="lead text-pink" href="#pergunta3" data-toggle="collapse" data-target="#pergunta3" aria-expanded="true" aria-controls="pergunta3">
+            → "Depoimento 3...”
+          </a>
+          <div id="pergunta3" class="collapse" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
+            <p class="pt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
+            </p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a class="lead text-pink" href="#pergunta4" data-toggle="collapse" data-target="#pergunta4" aria-expanded="true" aria-controls="pergunta4">
+            → "Depoimento 4...”
+          </a>
+          <div id="pergunta4" class="collapse" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
+            <p class="pt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
+            </p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a class="lead text-pink" href="#pergunta5" data-toggle="collapse" data-target="#pergunta5" aria-expanded="true" aria-controls="pergunta5">
+            → "Depoimento 5...”
+          </a>
+          <div id="pergunta5" class="collapse" aria-labelledby="perguntasFrequentes" data-parent="#perguntasFrequentes">
+            <p class="pt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
+            </p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECTION -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <div class="mb-3">
+        <h2 class="display-4 text-pink title-mobile">MIGA, FICA DE OLHO!</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center">
+            <img src="./img/icon2.jpeg" alt="icon2">
+          </div>
+
+          <p>"Se em seu relacionamento identifica essas coisas, busque por ajuda!
+            Você não esta sozinha!”</p>
+        </div>
+      </div>
+      <!-- FALE CONOSCO -->
+      <div class="text-center my-5" id="contato">
+        <p class="small m-3">
+          ENTRE EM CONTATO COM A GENTE
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="d-flex flex-column">
+            <a href="https://wa.me/5511956543031?text=Oi%20preciso%20de%20ajuda%20,%20estou%20em%20perigo" class="btn btn-lg btn-success mb-3" target="_blank">
+              WHATSAPP
+            </a>
+            <a href="https://t.me/aBiaCoelho" class="btn btn-lg btn-primary" target="_blank">
+              TELEGRAM
+            </a>
+          </div>
+        </div>
+        <p class="mt-5 text-pink font-weight-bold">OU</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center">
+              <img src="./img/icon3.jpeg" alt="icon3">
+            </div>
+
+            <p>Ligue 180</p>
+            <p>DENUNCIE</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-pink text-white">
+
+    <div class="text-dark text-center py-3">
+      <p class="mb-0">
+        <!-- Javascript traz o ano atual -->
+        <img src="./img/logo.svg" alt="logo tagarela">
+      <p>
+        &copy; <span id="ano-atual"></span> Alguns direitos reservados.
+      </p>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>
